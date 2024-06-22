@@ -1,19 +1,19 @@
 frappe.ui.form.on('Issue', {
-    refresh: function(frm) {
+    // refresh: function(frm) {
 
-        if (frm.doc.status == "Open") {
-            frm.add_custom_button(__('Material Request'), function () {
-                frappe.new_doc('Material Request', {
-                    issue: frm.doc.name,  
-                    // Example fields to prefill
-                    material_request_type:"Material Transfer", 
-                    subject: frm.doc.subject,  
-                    priority: frm.doc.priority,  
-                    issue_type: frm.doc.issue_type  
-                });
-            }, __("Create"));
-        }   
-    }
+    //     // if (frm.doc.status == "Open") {
+    //     //     frm.add_custom_button(__('Material Request'), function () {
+    //     //         frappe.new_doc('Material Request', {
+    //     //             issue: frm.doc.name,  
+    //     //             // Example fields to prefill
+    //     //             material_request_type:"Material Transfer", 
+    //     //             subject: frm.doc.subject,  
+    //     //             priority: frm.doc.priority,  
+    //     //             issue_type: frm.doc.issue_type  
+    //     //         });
+    //     //     }, __("Create"));
+    //     // }   
+    // }
 });
 
 frappe.ui.form.on('Material Request', {
