@@ -34,6 +34,12 @@ app_license = "MIT"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+doctype_js = {
+    "Issue" : "public/js/issue_custom_button.js",
+    
+    "Material Request":"public/js/issue_custom_button.js"
+    }
+
 # Home Pages
 # ----------
 
